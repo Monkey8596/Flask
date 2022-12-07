@@ -2,7 +2,7 @@ from flask import Flask, request,make_response,redirect, render_template
 
 app = Flask(__name__)
 
-ALL = ['ALL_1', 'ALL_2', 'ALL_3']
+ALL = ['Buy coffe', 'Send the request', 'Video Production']
 
 
 
