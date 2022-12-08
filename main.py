@@ -4,6 +4,13 @@ app = Flask(__name__)
 
 ALL = ['Buy coffe', 'Send the request', 'Video Production']
 
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html', error=error )
+
+@app.errorhandler(500)
+def Internal_Server_Error(error):
+    return render_template('500.html', error=error )
 
 
 @app.route('/')
