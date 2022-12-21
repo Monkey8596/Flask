@@ -12,3 +12,4 @@ WTForms==3.0.1
 flask-testing
 blinker
 firebase-admin
+flask-login
